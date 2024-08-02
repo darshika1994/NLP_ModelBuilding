@@ -26,10 +26,8 @@ Implementation of BART on my text :
 I utilized the VADER model to assess the sentiment of characters as they delivered their dialogues. For visualization, I employed heatmaps and the WordCloud library to illustrate the sentiments. Additionally, I evaluated the accuracy of the VADER model against a manually labeled dataset, categorizing sentiments as Positive, Negative, and Neutral.
 
 VADER (Valence Aware Dictionary and sentiment Reasoner):
-
-Uses a pre-built dictionary where each word or phrase is assigned a sentiment score, for example, "happy" might have a positive score, while "sad" has a negative score.
-
-VADER also considers modifiers like "very" or "not," which can change the intensity of the sentiment. For example, "very happy" would be more positive than just "happy," and "not happy" would be negative.
+  - Uses a pre-built dictionary where each word or phrase is assigned a sentiment score, for example, "happy" might have a positive score, while "sad" has a negative score.
+  - VADER also considers modifiers like "very" or "not," which can change the intensity of the sentiment. For example, "very happy" would be more positive than just "happy," and "not happy" would be negative.
 VADER then combines the scores of all words in a text to compute an overall sentiment score.
 Implementation of VADER on my text :
 
