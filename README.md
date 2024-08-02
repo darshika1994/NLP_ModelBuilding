@@ -6,7 +6,9 @@ I have used the pre-trained BART model to effectively generate concise and coher
 BART (Bidirectional and Auto-Regressive Transformers) is a powerful model developed by Facebook AI for tasks like text summarization, translation, and text generation. It is called "Bidirectional and Auto-Regressive Transformers" because it incorporates two different methods for processing and generating text making the text contextually relevant, coherent and flexible.
 
 Bidirectional: It means that the model reads the text from both directions—left-to-right and right-to-left (encoding stage).
+
 Auto-regressive: It means that the model generates text one word at a time, using the previously generated words to predict the next word, starting with a special start token (decoding stage).
+
 Implementation of BART on my text :
 
 Filtering Long Sentences: Selecting subtitles that are longer than 250 characters (so that the model runs smoothly).
@@ -27,6 +29,7 @@ I utilized the VADER model to assess the sentiment of characters as they deliver
 VADER (Valence Aware Dictionary and sentiment Reasoner)
 
 Uses a pre-built dictionary where each word or phrase is assigned a sentiment score, for example, "happy" might have a positive score, while "sad" has a negative score.
+
 VADER also considers modifiers like "very" or "not," which can change the intensity of the sentiment. For example, "very happy" would be more positive than just "happy," and "not happy" would be negative.
 VADER then combines the scores of all words in a text to compute an overall sentiment score.
 Implementation of VADER on my text :
@@ -47,7 +50,9 @@ To enhance the low accuracy of the VADER model, I implemented an SVM model with 
 
 SMOTE (Synthetic Minority Over-sampling Technique) works by creating new, similar data points for the less common class in a dataset to balance it out. Instead of just copying existing data points, SMOTE looks at a data point in the minority class and its closest neighbors, then creates new, slightly different data points between them. This helps models learn better when there’s an imbalance between classes, like when there are more negative sentiments than positive ones. Additionally, TF-IDF captures the importance of words and helps in distinguishing between different documents by assigning weights to terms
 
+
 Implementation of SVM (TF-IDF) & SMOTE on my text :
+
 
 Feature Extraction and Model Training:
 TF-IDF Vectorization: I transformed the textual data into numerical features using TF-IDF (Term Frequency-Inverse Document Frequency) to capture the importance of words in the dialogues.
